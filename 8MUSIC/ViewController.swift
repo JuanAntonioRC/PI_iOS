@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         //quitamos el separador del navegador
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         navigationController?.navigationBar.shadowImage = UIImage()
-
     }
     
 

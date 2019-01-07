@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,20 +10,360 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="som-6j-5X1">
+            <objects>
+                <viewController id="niK-9m-N8Q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m92-J4-YRQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="degradadoApp8music" translatesAutoresizingMaskIntoConstraints="NO" id="pU6-OR-kd5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkA-jk-Srr">
+                                <rect key="frame" x="51" y="738" width="36" height="30"/>
+                                <state key="normal" title="Inicio">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zwh-kI-Gol" kind="popoverPresentation" popoverAnchorView="QkA-jk-Srr" id="Yws-N0-j0a">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfM-uW-hm1">
+                                <rect key="frame" x="191" y="738" width="63" height="30"/>
+                                <state key="normal" title="Nosotros">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jCG-k1-hhY" kind="popoverPresentation" popoverAnchorView="JfM-uW-hm1" id="6Gf-gE-8dE">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEo-62-dPD">
+                                <rect key="frame" x="274" y="738" width="36" height="30"/>
+                                <state key="normal" title="Perfil">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qf1-tj-awQ" kind="popoverPresentation" popoverAnchorView="aEo-62-dPD" id="uAh-EG-5ib">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWb-jb-t0S">
+                                <rect key="frame" x="103" y="738" width="72" height="30"/>
+                                <state key="normal" title="Canciones">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pU6-OR-kd5" firstAttribute="leading" secondItem="m92-J4-YRQ" secondAttribute="leading" id="1LZ-lq-neL"/>
+                            <constraint firstItem="yQp-jK-d90" firstAttribute="bottom" secondItem="aWb-jb-t0S" secondAttribute="bottom" constant="10" id="2Xd-ja-Zdh"/>
+                            <constraint firstAttribute="trailing" secondItem="pU6-OR-kd5" secondAttribute="trailing" id="3vh-IC-HkN"/>
+                            <constraint firstItem="JfM-uW-hm1" firstAttribute="leading" secondItem="aWb-jb-t0S" secondAttribute="trailing" constant="16" id="BaN-xA-G2p"/>
+                            <constraint firstItem="aWb-jb-t0S" firstAttribute="leading" secondItem="m92-J4-YRQ" secondAttribute="leading" constant="103" id="E66-OY-ckD"/>
+                            <constraint firstItem="yQp-jK-d90" firstAttribute="bottom" secondItem="QkA-jk-Srr" secondAttribute="bottom" constant="10" id="G5c-DU-edb"/>
+                            <constraint firstAttribute="bottom" secondItem="pU6-OR-kd5" secondAttribute="bottom" id="GR6-b3-mff"/>
+                            <constraint firstItem="yQp-jK-d90" firstAttribute="bottom" secondItem="aEo-62-dPD" secondAttribute="bottom" constant="10" id="NHr-ct-OJz"/>
+                            <constraint firstItem="aWb-jb-t0S" firstAttribute="leading" secondItem="QkA-jk-Srr" secondAttribute="trailing" constant="16" id="RQw-8n-cyM"/>
+                            <constraint firstItem="aEo-62-dPD" firstAttribute="leading" secondItem="JfM-uW-hm1" secondAttribute="trailing" constant="20" id="Z7A-qG-mw9"/>
+                            <constraint firstItem="yQp-jK-d90" firstAttribute="bottom" secondItem="JfM-uW-hm1" secondAttribute="bottom" constant="10" id="l0C-cG-nba"/>
+                            <constraint firstItem="pU6-OR-kd5" firstAttribute="top" secondItem="m92-J4-YRQ" secondAttribute="top" id="nwI-cw-bbv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yQp-jK-d90"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Is4-Zp-QcG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1294" y="926"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="b0d-o3-PMF">
+            <objects>
+                <viewController id="jCG-k1-hhY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pIU-n1-R6J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="degradadoApp8music" translatesAutoresizingMaskIntoConstraints="NO" id="DHY-xF-kOM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Au-6d-lDD">
+                                <rect key="frame" x="51" y="738" width="36" height="30"/>
+                                <state key="normal" title="Inicio">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zwh-kI-Gol" kind="popoverPresentation" popoverAnchorView="0Au-6d-lDD" id="sHH-lc-XnY">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tN5-GA-oh1">
+                                <rect key="frame" x="103" y="738" width="72" height="30"/>
+                                <state key="normal" title="Canciones">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="niK-9m-N8Q" kind="popoverPresentation" popoverAnchorView="tN5-GA-oh1" id="Q84-x3-f6h">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2n-oP-CEm">
+                                <rect key="frame" x="191" y="738" width="63" height="30"/>
+                                <state key="normal" title="Nosotros">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bL9-LB-9to">
+                                <rect key="frame" x="274" y="738" width="36" height="30"/>
+                                <state key="normal" title="Perfil">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qf1-tj-awQ" kind="popoverPresentation" popoverAnchorView="bL9-LB-9to" id="YlX-Uo-9MW">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6kE-8u-mFq" firstAttribute="bottom" secondItem="T2n-oP-CEm" secondAttribute="bottom" constant="10" id="14q-sJ-3z6"/>
+                            <constraint firstItem="6kE-8u-mFq" firstAttribute="bottom" secondItem="bL9-LB-9to" secondAttribute="bottom" constant="10" id="9wP-5p-CHo"/>
+                            <constraint firstItem="bL9-LB-9to" firstAttribute="leading" secondItem="T2n-oP-CEm" secondAttribute="trailing" constant="20" id="Xvy-DH-cvj"/>
+                            <constraint firstItem="tN5-GA-oh1" firstAttribute="leading" secondItem="0Au-6d-lDD" secondAttribute="trailing" constant="16" id="YE4-rz-T5K"/>
+                            <constraint firstItem="T2n-oP-CEm" firstAttribute="leading" secondItem="tN5-GA-oh1" secondAttribute="trailing" constant="16" id="ZqC-PE-R59"/>
+                            <constraint firstItem="0Au-6d-lDD" firstAttribute="leading" secondItem="6kE-8u-mFq" secondAttribute="leading" constant="51" id="fZP-f3-5GJ"/>
+                            <constraint firstItem="6kE-8u-mFq" firstAttribute="bottom" secondItem="tN5-GA-oh1" secondAttribute="bottom" constant="10" id="fxJ-5P-rlP"/>
+                            <constraint firstItem="6kE-8u-mFq" firstAttribute="bottom" secondItem="0Au-6d-lDD" secondAttribute="bottom" constant="10" id="qJf-je-cjD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6kE-8u-mFq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PlN-n4-ado" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255" y="926"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="G4j-i1-WNF">
+            <objects>
+                <viewController id="Qf1-tj-awQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Od4-vn-42w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="degradadoApp8music" translatesAutoresizingMaskIntoConstraints="NO" id="0wP-bw-JIJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AO-ge-sm2">
+                                <rect key="frame" x="51" y="738" width="36" height="30"/>
+                                <state key="normal" title="Inicio">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zwh-kI-Gol" kind="popoverPresentation" popoverAnchorView="7AO-ge-sm2" id="wkz-20-QPK">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ZV-xz-yPv">
+                                <rect key="frame" x="103" y="738" width="72" height="30"/>
+                                <state key="normal" title="Canciones">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="niK-9m-N8Q" kind="popoverPresentation" popoverAnchorView="8ZV-xz-yPv" id="oVQ-k8-ouY">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eey-2v-4DD">
+                                <rect key="frame" x="191" y="738" width="63" height="30"/>
+                                <state key="normal" title="Nosotros">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jCG-k1-hhY" kind="popoverPresentation" popoverAnchorView="Eey-2v-4DD" id="1cb-ta-2qA">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECr-PU-ZTX">
+                                <rect key="frame" x="274" y="738" width="36" height="30"/>
+                                <state key="normal" title="Perfil">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PhI-94-iAo" firstAttribute="bottom" secondItem="8ZV-xz-yPv" secondAttribute="bottom" constant="10" id="B31-7Q-4K0"/>
+                            <constraint firstItem="PhI-94-iAo" firstAttribute="bottom" secondItem="7AO-ge-sm2" secondAttribute="bottom" constant="10" id="FJw-PE-xRv"/>
+                            <constraint firstItem="PhI-94-iAo" firstAttribute="bottom" secondItem="ECr-PU-ZTX" secondAttribute="bottom" constant="10" id="Gj3-J9-iAC"/>
+                            <constraint firstItem="ECr-PU-ZTX" firstAttribute="leading" secondItem="Eey-2v-4DD" secondAttribute="trailing" constant="20" id="TOy-Bq-SX8"/>
+                            <constraint firstItem="PhI-94-iAo" firstAttribute="bottom" secondItem="Eey-2v-4DD" secondAttribute="bottom" constant="10" id="ZwB-fs-iYL"/>
+                            <constraint firstItem="8ZV-xz-yPv" firstAttribute="leading" secondItem="7AO-ge-sm2" secondAttribute="trailing" constant="16" id="hUf-u4-yBe"/>
+                            <constraint firstItem="7AO-ge-sm2" firstAttribute="leading" secondItem="PhI-94-iAo" secondAttribute="leading" constant="51" id="m5g-AC-hqd"/>
+                            <constraint firstItem="Eey-2v-4DD" firstAttribute="leading" secondItem="8ZV-xz-yPv" secondAttribute="trailing" constant="16" id="oPv-qO-FvB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PhI-94-iAo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHR-Uo-7Wa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="816.79999999999995" y="925.86206896551732"/>
+        </scene>
         <!--Main Menu View Controller-->
         <scene sceneID="fcc-Zd-57q">
             <objects>
                 <viewController storyboardIdentifier="mainMenuViewController" id="zwh-kI-Gol" customClass="mainMenuViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l7w-5p-y9b">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="degradadoApp8music" translatesAutoresizingMaskIntoConstraints="NO" id="bc4-EM-1bH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WI0-th-ByK">
+                                <rect key="frame" x="58" y="738" width="36" height="30"/>
+                                <state key="normal" title="Inicio">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2og-QL-mr7">
+                                <rect key="frame" x="111" y="738" width="72" height="30"/>
+                                <state key="normal" title="Canciones"/>
+                                <connections>
+                                    <segue destination="niK-9m-N8Q" kind="popoverPresentation" popoverAnchorView="2og-QL-mr7" id="cK9-Wc-w1x">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3R-eQ-jOF">
+                                <rect key="frame" x="200" y="738" width="63" height="30"/>
+                                <state key="normal" title="Nosotros"/>
+                                <connections>
+                                    <segue destination="jCG-k1-hhY" kind="popoverPresentation" popoverAnchorView="D3R-eQ-jOF" id="f2y-YM-68c">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRh-Bp-MnJ">
+                                <rect key="frame" x="281" y="738" width="36" height="30"/>
+                                <state key="normal" title="Perfil"/>
+                                <connections>
+                                    <segue destination="Qf1-tj-awQ" kind="popoverPresentation" popoverAnchorView="FRh-Bp-MnJ" id="Hrw-D5-TzZ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descubre las ultimas novedades" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H7-UH-EuO">
+                                <rect key="frame" x="64" y="101" width="247" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mui-dt-NC7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancion1" translatesAutoresizingMaskIntoConstraints="NO" id="8Iz-0n-eYX">
+                                <rect key="frame" x="67" y="168" width="242" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancion2" translatesAutoresizingMaskIntoConstraints="NO" id="nbB-rQ-Dul">
+                                <rect key="frame" x="67" y="377" width="244" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="GNd-gO-Y5w"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancion3" translatesAutoresizingMaskIntoConstraints="NO" id="UpO-tJ-XC0">
+                                <rect key="frame" x="67" y="554" width="241" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="o5K-hz-ejF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canción 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGA-cc-F4h">
+                                <rect key="frame" x="148" y="513" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canción 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbd-jp-L9z">
+                                <rect key="frame" x="147" y="690" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canción 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHO-RD-v9a">
+                                <rect key="frame" x="150" y="304" width="75" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="UpO-tJ-XC0" firstAttribute="centerX" secondItem="l7w-5p-y9b" secondAttribute="centerX" id="0uF-ND-0ut"/>
+                            <constraint firstItem="WI0-th-ByK" firstAttribute="baseline" secondItem="D3R-eQ-jOF" secondAttribute="baseline" id="5xG-ZA-ugY"/>
+                            <constraint firstItem="uHO-RD-v9a" firstAttribute="top" secondItem="8Iz-0n-eYX" secondAttribute="bottom" constant="8" symbolic="YES" id="6mq-ch-3wt"/>
+                            <constraint firstItem="i3k-oJ-Hil" firstAttribute="bottom" secondItem="FRh-Bp-MnJ" secondAttribute="bottom" constant="10" id="7YW-Us-HSL"/>
+                            <constraint firstAttribute="bottom" secondItem="bc4-EM-1bH" secondAttribute="bottom" id="7uM-xa-mw1"/>
+                            <constraint firstItem="uHO-RD-v9a" firstAttribute="top" secondItem="l7w-5p-y9b" secondAttribute="top" constant="304" id="A5B-8M-rGl"/>
+                            <constraint firstItem="8Iz-0n-eYX" firstAttribute="top" secondItem="2H7-UH-EuO" secondAttribute="bottom" constant="46" id="BgK-WI-la5"/>
+                            <constraint firstItem="UpO-tJ-XC0" firstAttribute="leading" secondItem="8Iz-0n-eYX" secondAttribute="leading" id="E3s-4t-3F7"/>
+                            <constraint firstItem="UpO-tJ-XC0" firstAttribute="trailing" secondItem="8Iz-0n-eYX" secondAttribute="trailing" constant="-1" id="HPv-w6-RQk"/>
+                            <constraint firstItem="bc4-EM-1bH" firstAttribute="top" secondItem="l7w-5p-y9b" secondAttribute="top" id="JH1-n4-yc6"/>
+                            <constraint firstItem="uHO-RD-v9a" firstAttribute="trailing" secondItem="vGA-cc-F4h" secondAttribute="trailing" id="Q2O-Be-Ckd"/>
+                            <constraint firstItem="uHO-RD-v9a" firstAttribute="leading" secondItem="i3k-oJ-Hil" secondAttribute="leading" constant="150" id="Tcd-on-fnu"/>
+                            <constraint firstItem="WI0-th-ByK" firstAttribute="baseline" secondItem="2og-QL-mr7" secondAttribute="baseline" id="V7E-WI-mbL"/>
+                            <constraint firstItem="UpO-tJ-XC0" firstAttribute="top" secondItem="vGA-cc-F4h" secondAttribute="bottom" constant="20" id="XTL-Rt-JVd"/>
+                            <constraint firstItem="WI0-th-ByK" firstAttribute="baseline" secondItem="FRh-Bp-MnJ" secondAttribute="baseline" id="YX0-2h-ugQ"/>
+                            <constraint firstItem="UpO-tJ-XC0" firstAttribute="leading" secondItem="i3k-oJ-Hil" secondAttribute="leading" constant="67" id="ZbH-QB-1RP"/>
+                            <constraint firstItem="UpO-tJ-XC0" firstAttribute="centerX" secondItem="bc4-EM-1bH" secondAttribute="centerX" id="Zog-r5-d6d"/>
+                            <constraint firstItem="uHO-RD-v9a" firstAttribute="trailing" secondItem="xbd-jp-L9z" secondAttribute="trailing" id="g5F-t7-ajT"/>
+                            <constraint firstItem="nbB-rQ-Dul" firstAttribute="leading" secondItem="8Iz-0n-eYX" secondAttribute="leading" id="gGk-EF-Dru"/>
+                            <constraint firstItem="i3k-oJ-Hil" firstAttribute="bottom" secondItem="2og-QL-mr7" secondAttribute="bottom" constant="10" id="gaf-LU-jPc"/>
+                            <constraint firstItem="bc4-EM-1bH" firstAttribute="leading" secondItem="l7w-5p-y9b" secondAttribute="leading" id="hVJ-KG-c6D"/>
+                            <constraint firstItem="xbd-jp-L9z" firstAttribute="top" secondItem="UpO-tJ-XC0" secondAttribute="bottom" constant="8" symbolic="YES" id="hVy-Xe-pLA"/>
+                            <constraint firstItem="2H7-UH-EuO" firstAttribute="top" secondItem="i3k-oJ-Hil" secondAttribute="top" constant="57" id="lAz-Zb-Ub6"/>
+                            <constraint firstItem="D3R-eQ-jOF" firstAttribute="leading" secondItem="2og-QL-mr7" secondAttribute="trailing" constant="17" id="mni-jK-whv"/>
+                            <constraint firstItem="UpO-tJ-XC0" firstAttribute="centerX" secondItem="2H7-UH-EuO" secondAttribute="centerX" id="pOd-Wk-CsS"/>
+                            <constraint firstItem="i3k-oJ-Hil" firstAttribute="trailing" secondItem="FRh-Bp-MnJ" secondAttribute="trailing" constant="58" id="rdV-HX-wlK"/>
+                            <constraint firstItem="FRh-Bp-MnJ" firstAttribute="leading" secondItem="D3R-eQ-jOF" secondAttribute="trailing" constant="18" id="rzt-Ay-EPR"/>
+                            <constraint firstItem="2og-QL-mr7" firstAttribute="leading" secondItem="WI0-th-ByK" secondAttribute="trailing" constant="17" id="sIM-uF-CkQ"/>
+                            <constraint firstItem="vGA-cc-F4h" firstAttribute="top" secondItem="nbB-rQ-Dul" secondAttribute="bottom" constant="8" symbolic="YES" id="u1s-Zl-cLd"/>
+                            <constraint firstItem="i3k-oJ-Hil" firstAttribute="bottom" secondItem="D3R-eQ-jOF" secondAttribute="bottom" constant="10" id="vCN-dz-dxQ"/>
+                            <constraint firstItem="FRh-Bp-MnJ" firstAttribute="top" secondItem="UpO-tJ-XC0" secondAttribute="bottom" constant="56" id="y9R-Pp-zc4"/>
+                            <constraint firstItem="i3k-oJ-Hil" firstAttribute="trailing" secondItem="nbB-rQ-Dul" secondAttribute="trailing" constant="64" id="z4k-hS-BqN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="i3k-oJ-Hil"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FES-LM-bVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175" y="194"/>
+            <point key="canvasLocation" x="-255" y="155"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cancion1" width="120" height="120"/>
+        <image name="cancion2" width="500" height="500"/>
+        <image name="cancion3" width="500" height="500"/>
+        <image name="degradadoApp8music" width="2160" height="3840"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wkz-20-QPK"/>
+        <segue reference="Hrw-D5-TzZ"/>
+        <segue reference="f2y-YM-68c"/>
+        <segue reference="cK9-Wc-w1x"/>
+    </inferredMetricsTieBreakers>
 </document>

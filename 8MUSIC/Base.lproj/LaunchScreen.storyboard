@@ -18,12 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iTunesArtwork.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZgU-lr-ncd">
-                                <rect key="frame" x="84" y="233" width="207" height="201"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8MUSIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v81-Yx-ewk">
+                                <rect key="frame" x="137" y="317" width="101" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copiright (C) 2019. All rights reserved." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmP-rV-pNR">
+                                <rect key="frame" x="41" y="626" width="293" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gmP-rV-pNR" secondAttribute="bottom" constant="20" symbolic="YES" id="AHp-gh-Uxu"/>
+                            <constraint firstItem="gmP-rV-pNR" firstAttribute="centerX" secondItem="v81-Yx-ewk" secondAttribute="centerX" id="DDl-uB-vr9"/>
+                            <constraint firstItem="gmP-rV-pNR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uFG-bU-ZV7"/>
+                            <constraint firstItem="v81-Yx-ewk" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="z2g-kX-4X6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -32,7 +46,4 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="iTunesArtwork.png" width="512" height="512"/>
-    </resources>
 </document>
