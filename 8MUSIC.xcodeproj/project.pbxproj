@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7077635421E2AA5E002076F9 /* lostPass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7077635321E2AA5E002076F9 /* lostPass.storyboard */; };
 		7091721C21E0AB3200DA9AD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7091721B21E0AB3200DA9AD9 /* ViewController.swift */; };
 		7091721F21E0AB9E00DA9AD9 /* mainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7091721E21E0AB9E00DA9AD9 /* mainMenu.storyboard */; };
 		70A1943F21D2B19200226C67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A1943E21D2B19200226C67 /* AppDelegate.swift */; };
@@ -36,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7077635321E2AA5E002076F9 /* lostPass.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = lostPass.storyboard; sourceTree = "<group>"; };
 		7091721B21E0AB3200DA9AD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7091721E21E0AB9E00DA9AD9 /* mainMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mainMenu.storyboard; sourceTree = "<group>"; };
 		70A1943B21D2B19200226C67 /* 8MUSIC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 8MUSIC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +106,6 @@
 				7091721B21E0AB3200DA9AD9 /* ViewController.swift */,
 				70A1944A21D2B19300226C67 /* Info.plist */,
 				70A1944721D2B19300226C67 /* LaunchScreen.storyboard */,
-				7077635321E2AA5E002076F9 /* lostPass.storyboard */,
 			);
 			path = 8MUSIC;
 			sourceTree = "<group>";
@@ -237,7 +234,6 @@
 			files = (
 				7091721F21E0AB9E00DA9AD9 /* mainMenu.storyboard in Resources */,
 				70A1944921D2B19300226C67 /* LaunchScreen.storyboard in Resources */,
-				7077635421E2AA5E002076F9 /* lostPass.storyboard in Resources */,
 				70A1944621D2B19300226C67 /* Assets.xcassets in Resources */,
 				70A1944421D2B19200226C67 /* Main.storyboard in Resources */,
 			);
